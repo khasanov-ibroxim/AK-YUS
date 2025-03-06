@@ -1,0 +1,56 @@
+import React from 'react';
+import slide_1 from "@/assets/home/slide_1.jpg";
+import {Link} from "react-router-dom";
+import slide_2 from "@/assets/home/slide_2.jpg";
+import slide_3 from "@/assets/home/slide_3.jpg";
+import "./slider_home.css"
+
+const SliderHome = () => {
+    return (
+        <div id="home_sliderID" className="carousel slide carousel-fade" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#home_sliderID" data-slide-to="0" className="active"></li>
+                <li data-target="#home_sliderID" data-slide-to="1"></li>
+                <li data-target="#home_sliderID" data-slide-to="2"></li>
+            </ol>
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img src={slide_1} className="d-block w-100" alt="..."/>
+                    <div data-aos="fade-up" className="carousel-caption_singl">
+                        <span>Chic Reverie </span>
+                        <h5>Effortless Glamour for Every Occasion </h5>
+                        <Link to={"#"}>Shop Now</Link>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img src={slide_2} className="d-block w-100" alt="..."/>
+                    <div data-aos="fade-up" className="carousel-caption_singl">
+                        <span>Whimsy Blossoms </span>
+                        <h5>Embrace Playful Sophistication </h5>
+                        <Link to={"#"}>Shop Now</Link>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img src={slide_3} className="d-block w-100" alt="..."/>
+                    <div data-aos="fade-up" className="carousel-caption_singl">
+                        <span>Chic Reverie </span>
+                        <h5>Fashioning Dreams into Reality </h5>
+                        <Link to={"#"}>Shop Now</Link>
+                    </div>
+                </div>
+            </div>
+            <a className="carousel-control-prev" href="#home_sliderID" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+
+            </a>
+            <a className="carousel-control-next" href="#home_sliderID" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+
+            </a>
+
+        </div>
+
+    );
+};
+
+export default SliderHome;
