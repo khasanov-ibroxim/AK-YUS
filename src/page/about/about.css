@@ -1,0 +1,187 @@
+.about_header {
+    padding: 90px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_header h1 {
+    font-size: 64px;
+    font-weight: 400;
+    font-family: var(--font_outfit), sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.about_tabs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 0;
+
+}
+
+.tabs_item {
+    color: #9E9E9E;
+    font-weight: 500;
+    font-size: 28px;
+    font-family: var(--font_outfit), sans-serif;
+    cursor: pointer;
+}
+
+.tabs_item:hover, .tabs_item.isActive {
+    color: #222222;
+}
+
+.about_content {
+    margin-bottom: 50px;
+
+}
+
+.about_component img {
+    width: 90%;
+}
+
+.about_component h2 {
+    color: #222222;
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about_component p {
+    color: #666666;
+    font-size: 20px;
+}
+
+
+.about_component .s6_item {
+    text-align: center;
+    gap: 0;
+}
+
+.about_component .s6_item h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.about_component .s6_item_title {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.about_component .s6_item:hover img {
+    transform: scale(1);
+}
+
+.about_component_title {
+    font-size: 48px;
+    text-transform: capitalize;
+    color: #222222;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about_component .custom-nav {
+    top: 35%;
+}
+
+.about_component  .custom-nav button:last-child {
+    right: -12px;
+}
+.about_component  .s6_item_img {
+    height: 90%;
+    cursor: grab;
+}
+
+.o-story-component{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #666666;
+    text-rendering: optimizeLegibility;
+}
+.o-mission-component{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #666666;
+    text-rendering: optimizeLegibility;
+    font-size: 17px;
+}
+.o-mission-component ul{
+    list-style: decimal !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.o-mission-component ul li span{
+    font-weight: bold;
+}
+
+.with-us h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.with-us ul{
+    color: #666666;
+}
+.with-us ul a{
+    color: #222222;
+    font-weight: 600;
+}
+@media screen and (max-width: 800px) {
+    .about_component img {
+        width: 100%;
+    }
+
+    .about_header h1 {
+        font-size: 30px;
+    }
+
+    .about_header {
+        padding: 60px;
+    }
+
+    .tabs_item {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about_header h1 {
+        font-size: 20px;
+    }
+
+    .about_header {
+        padding: 60px 20px;
+    }
+
+    .tabs_item {
+        font-size: 14px;
+    }
+
+    .about_tabs {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_component h2 {
+        color: #222222;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .about_component p {
+        color: #666666;
+        font-size: 15px;
+    }
+}
