@@ -4,14 +4,12 @@ import PlaceIcon from '@mui/icons-material/Place';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import ForumIcon from '@mui/icons-material/Forum';
+import Header from "@/component/header/header.jsx";
 
 const Contact = () => {
     return (
         <div className={"container-sm top_def_100"}>
-            <div className="contact_header" >
-                <h1 data-aos="fade-up">Contact Us</h1>
-                <p data-aos="fade-up"><span>Home</span> / Contact Us</p>
-            </div>
+           <Header title={"Contact"} subtitle={"Contact"}/>
             <div className="row pt-5 pb-5">
                 <div data-aos="fade-up" className="col-lg-3">
                     <div className="contact_top_item">

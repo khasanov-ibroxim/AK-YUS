@@ -7,7 +7,7 @@ import {useLanguage} from "@/utils/lang/LangContext.jsx";
 import {Dropdown, Space} from "antd";
 import {languages} from "@/utils/lang/langs.jsx";
 import {CloseOutlined, DownOutlined, MenuOutlined} from "@ant-design/icons";
-import {CONTACT, HOME} from "@/utils/consts.jsx";
+import {ABOUT, CONTACT, FAQS, HOME} from "@/utils/consts.jsx";
 
 const Navbar = () => {
     const {handleLanguageChange, selectedLanguage} = useLanguage();
@@ -40,6 +40,8 @@ const Navbar = () => {
                 <div className={`nav_menu ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
                         <li><Link to={HOME}>Home</Link></li>
+                        <li><Link to={ABOUT}>About us</Link></li>
+                        <li><Link to={FAQS}>FAQs</Link></li>
                         <li><Link to={CONTACT}>Contact Us</Link></li>
                         <li className="lang_nav" style={isMobile ? {display: "flex"} : {display: "none"}}>
                             <Dropdown
