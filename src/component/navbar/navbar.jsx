@@ -39,10 +39,10 @@ const Navbar = () => {
                 </div>
                 <div className={`nav_menu ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
-                        <li><Link to={HOME}>Home</Link></li>
-                        <li><Link to={ABOUT}>About us</Link></li>
-                        <li><Link to={FAQS}>FAQs</Link></li>
-                        <li><Link to={CONTACT}>Contact Us</Link></li>
+                        <li><Link to={HOME}>{t("navbar.home")}</Link></li>
+                        <li><Link to={ABOUT}>{t("navbar.about")}</Link></li>
+                        <li><Link to={FAQS}>{t("navbar.faqs")}</Link></li>
+                        <li><Link to={CONTACT}>{t("navbar.contact")}</Link></li>
                         <li className="lang_nav" style={isMobile ? {display: "flex"} : {display: "none"}}>
                             <Dropdown
                                 menu={{

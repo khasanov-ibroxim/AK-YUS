@@ -233,111 +233,111 @@
 }
 
 
-.home_s3_modal {
-    width: 100vw;
-    height: 100vh;
-    background: #000;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    touch-action: manipulation;
-    -webkit-backface-visibility: hidden;
+    .home_s3_modal {
+        width: 100vw;
+        height: 100vh;
+        background: #000;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        touch-action: manipulation;
+        -webkit-backface-visibility: hidden;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.home_s3_modal_content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .home_s3_modal_content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.home_s3_modal_close {
-    border-radius: 50%;
-    background: none;
-    outline: none;
-    border: 2px #898989 solid;
-    color: #898989;
-    position: absolute;
-    right: 30px;
-    top: 50px;
-    padding: 15px 20px;
+    .home_s3_modal_close {
+        border-radius: 50%;
+        background: none;
+        outline: none;
+        border: 2px #898989 solid;
+        color: #898989;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        padding: 15px 20px;
 
-}
+    }
 
-.home_s3_modal_close:hover {
-    border: 2px white solid;
-    color: white;
-    background: #191919;
-}
+    .home_s3_modal_close:hover {
+        border: 2px white solid;
+        color: white;
+        background: #191919;
+    }
 
-.home_s3_modal_close:hover svg {
-    transition: 1s;
-    transform: rotate(-180deg);
-}
+    .home_s3_modal_close:hover svg {
+        transition: 1s;
+        transform: rotate(-180deg);
+    }
 
-.home_s3_modal_close svg {
-    transition: 1s;
-    transform: rotate(180deg);
-    font-weight: 900;
-}
+    .home_s3_modal_close svg {
+        transition: 1s;
+        transform: rotate(180deg);
+        font-weight: 900;
+    }
 
-.home_s3_video_box {
-    width: 100%;
-    height: 100%;
-    position: relative;
+    .home_s3_video_box {
+        width: 100%;
+        height: 100%;
+        position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.home_s3_video_box_play_btn {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 40px;
-    position: absolute;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background: white;
-    width: 80px;
-    height: 80px;
-}
+    .home_s3_video_box_play_btn {
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 40px;
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background: white;
+        width: 80px;
+        height: 80px;
+    }
 
-.home_s3_video_box_play_btn svg {
+    .home_s3_video_box_play_btn svg {
 
-    border-radius: 50%;
-    transition: 1s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        border-radius: 50%;
+        transition: 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.home_s3_video_box_play_btn:hover {
-    background: black;
-    transition: 1s;
-}
+    .home_s3_video_box_play_btn:hover {
+        background: black;
+        transition: 1s;
+    }
 
-.home_s3_video_box_play_btn:hover svg {
-    color: white;
-    transition: 1s;
-}
+    .home_s3_video_box_play_btn:hover svg {
+        color: white;
+        transition: 1s;
+    }
 
-.home_s3_video_box img {
-    width: 100%;
-    height: 100%;
-}
+    .home_s3_video_box img {
+        width: 100%;
+        height: 100%;
+    }
 
 .home_s3_content {
     display: flex;

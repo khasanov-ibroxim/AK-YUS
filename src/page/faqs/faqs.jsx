@@ -3,95 +3,90 @@ import "./faqs.css"
 import Header from "@/component/header/header.jsx";
 import {Collapse} from "antd";
 import {MinusOutlined, PlusOutlined} from "@ant-design/icons";
+import {useTranslation} from "react-i18next";
 
 const {Panel} = Collapse;
 
 const Faqs = () => {
     const [activeKey, setActiveKey] = useState([]);
+    const {t} = useTranslation();
     const items = [
         {
             key: '1',
-            label: 'What is your return policy?',
-            children: <p>We offer a hassle-free return policy. If you’re not satisfied with your purchase, you can
-                return it within 30 days for a full refund or exchange. Please refer to our Returns & Exchanges page for
-                detailed instructions.</p>,
+            label: t("faqs.item_1.q"),
+            children: <p>{t("faqs.item_1.a")}</p>,
         },
         {
             key: '2',
-            label: 'How do I track my order?',
-            children: <p>Tracking your order is easy! Once your order is shipped, we’ll send you a confirmation email
-                with a tracking number. You can use this number to track your order’s status on our Order Tracking
-                page.</p>,
+            label: t("faqs.item_2.q"),
+            children: <p>{t("faqs.item_2.a")}</p>,
         },
         {
             key: '3',
-            label: 'What payment methods do you accept?',
-            children: <p>We accept major credit cards (Visa, MasterCard, American Express) and PayPal for secure and convenient payments.</p>,
+            label: t("faqs.item_3.q"),
+            children: <p>{t("faqs.item_3.a")}</p>,
+
         },
         {
             key: '4',
-            label: 'Do you offer international shipping?',
-            children: <p>Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary based on your location. Please refer to our Shipping Information page for more details.</p>,
-        },
+            label: t("faqs.item_4.q"),
+            children: <p>{t("faqs.item_4.a")}</p>,
+            },
         {
             key: '5',
-            label: 'How can I contact your customer support?',
-            children: <p>You can reach our friendly customer support team through our Contact Us page, where you’ll find a contact form and our email address. We’re here to assist you with any questions or concerns you may have.</p>,
-        },
+            label: t("faqs.item_5.q"),
+            children: <p>{t("faqs.item_5.a")}</p>,
+            },
         {
             key: '6',
-            label: 'Are the sizes true to measurements?',
-            children: <p>We provide detailed size charts for each product to help you find the perfect fit. Please refer to the size chart on the product page to ensure you choose the right size.</p>,
+            label: t("faqs.item_6.q"),
+            children: <p>{t("faqs.item_6.a")}</p>,
         },
         {
             key: '7',
-            label: 'Can I modify or cancel my order after it\'s been placed?',
-            children: <p>We process orders quickly to ensure fast delivery, so modifications or cancellations may be limited. Contact our customer support as soon as possible, and we’ll do our best to assist you.</p>,
-        },
+            label: t("faqs.item_7.q"),
+            children: <p>{t("faqs.item_7.a")}</p>,
+            },
         {
             key: '8',
-            label: 'What is your return policy?',
-            children: <p>We offer a hassle-free return policy. If you’re not satisfied with your purchase, you can
-                return it within 30 days for a full refund or exchange. Please refer to our Returns & Exchanges page for
-                detailed instructions.</p>,
+            label: t("faqs.item_8.q"),
+            children: <p>{t("faqs.item_8.a")}</p>,
         },
         {
             key: '9',
-            label: 'How do I track my order?',
-            children: <p>Tracking your order is easy! Once your order is shipped, we’ll send you a confirmation email
-                with a tracking number. You can use this number to track your order’s status on our Order Tracking
-                page.</p>,
+            label: t("faqs.item_9.q"),
+            children: <p>{t("faqs.item_9.a")}</p>,
         },
         {
             key: '10',
-            label: 'What payment methods do you accept?',
-            children: <p>We accept major credit cards (Visa, MasterCard, American Express) and PayPal for secure and convenient payments.</p>,
-        },
+            label: t("faqs.item_10.q"),
+            children: <p>{t("faqs.item_10.a")}</p>,
+            },
         {
             key: '11',
-            label: 'Do you offer international shipping?',
-            children: <p>Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary based on your location. Please refer to our Shipping Information page for more details.</p>,
+            label: t("faqs.item_11.q"),
+            children: <p>{t("faqs.item_11.a")}</p>,
         },
         {
             key: '12',
-            label: 'How can I contact your customer support?',
-            children: <p>You can reach our friendly customer support team through our Contact Us page, where you’ll find a contact form and our email address. We’re here to assist you with any questions or concerns you may have.</p>,
-        },
+            label: t("faqs.item_12.q"),
+            children: <p>{t("faqs.item_12.a")}</p>,
+            },
         {
             key: '13',
-            label: 'Are the sizes true to measurements?',
-            children: <p>We provide detailed size charts for each product to help you find the perfect fit. Please refer to the size chart on the product page to ensure you choose the right size.</p>,
-        },
+            label: t("faqs.item_13.q"),
+            children: <p>{t("faqs.item_13.a")}</p>,
+            },
         {
             key: '14',
-            label: 'Can I modify or cancel my order after it\'s been placed?',
-            children: <p>We process orders quickly to ensure fast delivery, so modifications or cancellations may be limited. Contact our customer support as soon as possible, and we’ll do our best to assist you.</p>,
-        },
+            label: t("faqs.item_14.q"),
+            children: <p>{t("faqs.item_14.a")}</p>,
+            },
 
     ];
     return (
         <div className="container-sm faqs top_def_100">
-            <Header title={"FAQs"} subtitle={"FAQs"}/>
+            <Header title={t('navbar.faqs')} subtitle={t('navbar.faqs')}/>
             <section className="question">
                 <div className="question_box">
                     <div className="question_left">

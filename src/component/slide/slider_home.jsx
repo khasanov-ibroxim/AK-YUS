@@ -4,8 +4,10 @@ import {Link} from "react-router-dom";
 import slide_2 from "@/assets/home/slide_2.jpg";
 import slide_3 from "@/assets/home/slide_3.jpg";
 import "./slider_home.css"
+import {useTranslation} from "react-i18next";
 
 const SliderHome = () => {
+    const {t} = useTranslation();
     return (
         <div id="home_sliderID" className="carousel slide carousel-fade" data-ride="carousel">
             <ol className="carousel-indicators">
@@ -17,8 +19,8 @@ const SliderHome = () => {
                 <div className="carousel-item active">
                     <img src={slide_1} className="d-block w-100" alt="..."/>
                     <div data-aos="fade-up" className="carousel-caption_singl">
-                        <span>Chic Reverie </span>
-                        <h5>Effortless Glamour for Every Occasion </h5>
+                        <span>{t("home.home_slide.slide_1.sub_title")}</span>
+                        <h5>{t("home.home_slide.slide_1.title")}</h5>
                         <Link to={"#"}>Shop Now</Link>
                     </div>
                 </div>

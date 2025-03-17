@@ -2,9 +2,11 @@ import React, {useRef, useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {FreeMode} from "swiper/modules";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const AboutComponent = () => {
-    const swiperRef = useRef(null); // Swiper uchun ref
+    const swiperRef = useRef(null);
+    const {t} = useTranslation();
     const [posts, setPosts] = useState([
         {
             img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_team_01.jpg",
@@ -55,18 +57,15 @@ const AboutComponent = () => {
                     <img src="https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_image-1024x1024.jpeg" alt=""/>
                 </div>
                 <div className="col-lg-6">
-                    <h2>Unveiling Your Unique Fashion Journey</h2>
-                    <p>Welcome to Mixtas Store, where fashion meets individuality, and style is more than just clothing
-                        –
-                        it's a statement. Our passion for fashion drives us to curate a collection that celebrates
-                        diversity, embraces trends, and empowers you to express yourself through clothing.</p>
+                    <h2>{t("about.about_component.title")}</h2>
+                    <p>{t("about.about_component.description")}</p>
                 </div>
             </div>
 
 
             <div className="about_component_title pb-5 pt-5">
                 <h1>
-                    Meet the our team
+                    {t("about.about_component.s2_title")}
                 </h1>
             </div>
             <div className="home_s6_swiper_box">
