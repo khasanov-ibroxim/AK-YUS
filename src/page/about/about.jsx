@@ -13,8 +13,7 @@ const About = () => {
     return (
         <div className="about top_def_100">
             <div className="about_header">
-                <h1>Discover the Art of Dressing <i>Where Every Stitch Tells a Story</i> and Every Outfit Paints a
-                    Picture</h1>
+                <h1>{t("about.index.header")}</h1>
             </div>
             <div className="container-sm">
 
@@ -28,8 +27,8 @@ const About = () => {
                     <div className={tabs === 2 ? "tabs_item isActive" : "tabs_item"} onClick={() => setTabs(2)}>
                         {t("about.index.misson")}
                     </div>
-                    <div className={tabs === 3 ? "tabs_item isActive" : "tabs_item"} onClick={() => setTabs(3)}>Conntect
-                        with Us
+                    <div className={tabs === 3 ? "tabs_item isActive" : "tabs_item"} onClick={() => setTabs(3)}>
+                        {t("about.index.contact")}
                     </div>
                 </div>
 

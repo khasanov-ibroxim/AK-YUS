@@ -1,5 +1,6 @@
 import React from 'react';
 import "./footer.css"
+import logo from '@/assets/logo_white.svg'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -7,29 +8,37 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EastIcon from '@mui/icons-material/East';
 import {Link} from "react-router-dom";
 import {CONTACT} from "@/utils/consts.jsx";
+import {useTranslation} from "react-i18next";
 
 const Footer = () => {
+    const {t} = useTranslation();
     return (
         <div className="footer">
             <div className="container-sm pt-5 pb-5">
                 <div className="row" style={{justifyContent:"space-between"}}>
                     <div className="col-lg-3">
                         <div className="footer_item_1">
-                            <img src={"https://mixtas.b-cdn.net/wp-content/uploads/2023/12/footer-logo.svg"} alt=""/>
+                            <img src={logo} alt=""/>
                             <p>
-                                Whether you're a trendsetter, a minimalist, or an adventurer at heart, Mixtas has
-                                something for everyone. Our diverse range of styles caters to various personas.
+                                {t("footer.item_1.text")}
                             </p>
                             <div className="footer_social">
+                                <a className="footer_social_circle"
+                                   href={"https://t.me/akyusstoree"}>
+                                    <TelegramIcon/></a>
+                                <a className="footer_social_circle"
+                                   href={"https://www.instagram.com/akyus.store?igsh=Z2NhNHhucGF2bzU2"}>
+                                    <InstagramIcon/></a>
+
                                 <Link className="footer_social_circle" to={"#"}><FacebookIcon/></Link>
-                                <Link className="footer_social_circle" to={"#"}><TelegramIcon/></Link>
+
                                 <Link className="footer_social_circle" to={"#"}><WhatsAppIcon/></Link>
-                                <Link className="footer_social_circle" to={"#"}><InstagramIcon/></Link>
+
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-6">
-                        <div className="footer_item_def">
+                    <div className="footer_item_def">
                             <h4>About Us</h4>
                             <ul>
                                 <li><Link to={"#"}>Our Story</Link></li>

@@ -5,7 +5,9 @@ export const about_translate ={
         index:{
             about:"О нас",
             story:"Наша история",
-            misson:"Наша миссия"
+            misson:"Наша миссия",
+            contact:"Свяжитесь с нами",
+            header:"Погрузитесь в мир трикотажа, где каждая нить сплетена с уютом, а каждая модель создана с душой"
         },
 
         about_component:{
@@ -35,7 +37,9 @@ export const about_translate ={
     },
     en:{
         index:{
-            about:"About us"
+            about:"About us",
+            header:"Погрузитесь в мир трикотажа, где каждая нить сплетена с уютом, а каждая модель создана с душой"
+
         },
     }
 }
