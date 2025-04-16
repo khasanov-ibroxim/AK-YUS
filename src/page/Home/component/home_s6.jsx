@@ -2,31 +2,34 @@ import React, {useRef, useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {FreeMode} from "swiper/modules";
 import {Link} from "react-router-dom";
-
+import s6_1 from "@/assets/home_origin/s6/5V1A0028_resized.jpg"
+import s6_2 from "@/assets/home_origin/s6/5V1A9663_resized.jpg"
+import s6_3 from "@/assets/home_origin/s6/5V1A0169_resized.jpg"
+import s6_4 from "@/assets/home_origin/s6/5V1A9833_resized.jpg"
 
 const HomeS6 = () => {
     const swiperRef = useRef(null); // Swiper uchun ref
     const [posts, setPosts] = useState([
         {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/blog-01.jpg",
+            img: s6_1,
             name: "Fashion Forward: Emerging Trends You Need to Know",
             create: "admin",
             data: "20.12.2024"
         },
         {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/blog-02.jpg",
+            img: s6_2,
             name: "Unveiling Elegance: Timeless Fashion Trends for Women",
             create: "admin",
             data: "20.12.2024"
         },
         {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/blog-03.jpg",
+            img: s6_3,
             name: "Fashion Forward: Emerging Trends You Need to Know",
             create: "admin",
             data: "20.12.2024"
         },
         {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/blog-04.jpg",
+            img: s6_4,
             name: "Fashion Forward: Emerging Trends You Need to Know",
             create: "admin",
             data: "20.12.2024"

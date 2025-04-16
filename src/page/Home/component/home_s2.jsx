@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import { FreeMode } from 'swiper/modules';
 import { Link } from "react-router-dom";
 
-import { AllProducts, Category } from "@/utils/db_products.jsx";
+import { BestSell, Category } from "@/utils/db_products.jsx";
 import ProductCard from "@/component/product_card/product_card.jsx";
 
 const HomeS2 = () => {
@@ -47,7 +47,7 @@ const HomeS2 = () => {
                 className="mySwiper"
                 data-aos="fade-up"
             >
-                {AllProducts.slice(0, 5).map((product, index) => (
+                {BestSell.slice(0, 5).map((product, index) => (
                     <SwiperSlide key={index}>
                         <ProductCard product={product} key={index}/>
                     </SwiperSlide>

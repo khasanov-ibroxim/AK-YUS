@@ -3,58 +3,42 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {FreeMode} from "swiper/modules";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import index_img from "@/assets/about/index/5V1A9797_resized.jpg"
 
+import item_1 from "@/assets/about/index/5V1A0003_resized.jpg"
+import item_2 from "@/assets/about/index/5V1A0331_resized.jpg"
+import item_3 from "@/assets/about/index/5V1A0407_resized.jpg"
+import item_4 from "@/assets/about/index/5V1A9857_resized.jpg"
 const AboutComponent = () => {
     const swiperRef = useRef(null);
     const {t} = useTranslation();
     const [posts, setPosts] = useState([
         {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_team_01.jpg",
+            img: item_1,
             name: "Marcus Turner",
             subname:"CEO/FOUNDER"
         },
         {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_team_02.jpg",
+            img: item_2,
             name: "Marcus Turner",
             subname:"CEO/FOUNDER"
         },
         {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_team_03.jpg",
+            img: item_3,
             name: "Marcus Turner",
             subname:"CEO/FOUNDER"
         },
         {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_team_04.jpg",
+            img: item_4,
             name: "Marcus Turner",
             subname:"CEO/FOUNDER"
         },
-        {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_team_01.jpg",
-            name: "Marcus Turner",
-            subname:"CEO/FOUNDER"
-        },
-        {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_team_02.jpg",
-            name: "Marcus Turner",
-            subname:"CEO/FOUNDER"
-        },
-        {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_team_03.jpg",
-            name: "Marcus Turner",
-            subname:"CEO/FOUNDER"
-        },
-        {
-            img: "https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_team_04.jpg",
-            name: "Marcus Turner",
-            subname:"CEO/FOUNDER"
-        },
-
     ]);
     return (
         <div className="about_component">
             <div className="row">
                 <div className="col-lg-6">
-                    <img src="https://mixtas.b-cdn.net/wp-content/uploads/2023/12/ab_image-1024x1024.jpeg" alt=""/>
+                    <img src={index_img} alt="" height={"70%"} style={{objectFit:"cover"}}/>
                 </div>
                 <div className="col-lg-6">
                     <h2>{t("about.about_component.title")}</h2>
@@ -63,7 +47,7 @@ const AboutComponent = () => {
             </div>
 
 
-            <div className="about_component_title pb-5 pt-5">
+            <div className="about_component_title pb-5">
                 <h1>
                     {t("about.about_component.s2_title")}
                 </h1>
@@ -84,8 +68,8 @@ const AboutComponent = () => {
                 </div>
                 <Swiper
                     ref={swiperRef} // Swiperga ref qo'shamiz
-                    slidesPerView={4}
-                    spaceBetween={1}
+                    slidesPerView={3}
+                    spaceBetween={0}
                     pagination={{clickable: true}}
                     modules={[FreeMode]}
                     grabCursor={true}
@@ -95,7 +79,7 @@ const AboutComponent = () => {
                         576: {slidesPerView: 2,},  // Kichik ekran (<= 576px)
                         768: {slidesPerView: 2,},  // O‘rta ekran (<= 768px)
                         900: {slidesPerView: 3,},  // O‘rta ekran (<= 768px)
-                        1000: {slidesPerView: 4,},  // O‘rta ekran (<= 768px)
+                        1000: {slidesPerView: 3,},  // O‘rta ekran (<= 768px)
                     }}
                     className="mySwiper"
                     data-aos="fade-up"
@@ -106,10 +90,10 @@ const AboutComponent = () => {
                                 <div className={"s6_item_img"}>
                                     <img src={product.img} alt={product.name}/>
                                 </div>
-                                <h1><Link to={"#"}>{product.name}</Link></h1>
-                                <div className="s6_item_title">
-                                    {product.subname}
-                                </div>
+                                {/*<h1><Link to={"#"}>{product.name}</Link></h1>*/}
+                                {/*<div className="s6_item_title">*/}
+                                {/*    {product.subname}*/}
+                                {/*</div>*/}
 
                             </div>
                         </SwiperSlide>

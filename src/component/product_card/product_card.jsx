@@ -16,7 +16,7 @@ const ProductCard = ({product , key}) => {
         >
             <Link className="home_s2_item_top" to={"#"}>
                 <img
-                    src={isHovered ? product.images[1] : product.images[0]}
+                    src={product.images}
                     alt={product.name}
                 />
             </Link>

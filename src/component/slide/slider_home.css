@@ -9,6 +9,10 @@
 #home_sliderID {
     top: 100px;
     position: relative;
+    height: 100vh;
+}
+#home_sliderID img{
+    object-fit: contain;
 }
 .carousel-fade .carousel-item {
     transition: opacity 0.4s !important;

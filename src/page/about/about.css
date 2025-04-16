@@ -40,7 +40,8 @@
 }
 
 .about_component img {
-    width: 90%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .about_component h2 {

@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
 import {CaretRightOutlined, CloseOutlined} from "@ant-design/icons";
 import {Link} from "react-router-dom";
-
+import {useTranslation} from "react-i18next";
+import video_poster from "@/assets/home_origin/s3/5V1A0356_resized.jpg"
 const HomeS3 = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-
+    const {t} = useTranslation();
     useEffect(() => {
         const targetDate = new Date("2025-03-08T00:00:00").getTime();
 
@@ -33,7 +34,7 @@ const HomeS3 = () => {
                 <div className="col-lg-6" data-aos="fade-up">
                     <div className=" home_s3_video_box">
                         <img
-                            src="https://mixtas.novaworks.net/wp-content/uploads/2023/12/m3_deals_01.jpg"
+                            src={video_poster}
                             alt="Mixtas Poster"
                             className="w-full h-auto cursor-pointer"
                             onClick={() => setIsOpen(true)}
@@ -48,10 +49,8 @@ const HomeS3 = () => {
                 </div>
                 <div className="col-lg-6" data-aos="fade-up">
                     <div className="home_s3_content">
-                        <span>Up to 60% Off</span>
-                        <h2>Unleash Your Style Potential with Our Spectacular Clothing Sale</h2>
-                        <p>Feel free to customize these titles to fit the tone and theme of your clothing sale and to
-                            convey the excitement of the discounts being offered.</p>
+                        <h2 dangerouslySetInnerHTML={{__html:t("home.home_s3.title")}}></h2>
+                        <p>{t("home.home_s3.content")}</p>
                         <div className="home_s3_timer">
                             <div className="home_s3_timer_item">
                                 <span>{String(timeLeft.days).padStart(2, '0')}</span>
