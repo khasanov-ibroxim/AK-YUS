@@ -3,12 +3,17 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {FreeMode} from "swiper/modules";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import index_img from "@/assets/about/index/5V1A9797_resized.jpg"
+import index_img from "@/assets/allphoto/5V1A9975_resized.jpg"
 
-import item_1 from "@/assets/about/index/5V1A0003_resized.jpg"
-import item_2 from "@/assets/about/index/5V1A0331_resized.jpg"
-import item_3 from "@/assets/about/index/5V1A0407_resized.jpg"
-import item_4 from "@/assets/about/index/5V1A9857_resized.jpg"
+import item_1 from "@/assets/allphoto/5V1A0081_resized.jpg"
+import item_2 from "@/assets/allphoto/5V1A0432_resized.jpg"
+import item_3 from "@/assets/allphoto/5V1A0543_resized.jpg"
+import item_4 from "@/assets/allphoto/5V1A0590_resized.jpg"
+import item_5 from "@/assets/allphoto/5V1A0607_resized.jpg"
+import item_6 from "@/assets/allphoto/5V1A0615_resized.jpg"
+import item_7 from "@/assets/allphoto/5V1A9843_resized.jpg"
+
+
 const AboutComponent = () => {
     const swiperRef = useRef(null);
     const {t} = useTranslation();
@@ -30,6 +35,21 @@ const AboutComponent = () => {
         },
         {
             img: item_4,
+            name: "Marcus Turner",
+            subname:"CEO/FOUNDER"
+        },
+        {
+            img: item_5,
+            name: "Marcus Turner",
+            subname:"CEO/FOUNDER"
+        },
+        {
+            img: item_6,
+            name: "Marcus Turner",
+            subname:"CEO/FOUNDER"
+        },
+        {
+            img: item_7,
             name: "Marcus Turner",
             subname:"CEO/FOUNDER"
         },

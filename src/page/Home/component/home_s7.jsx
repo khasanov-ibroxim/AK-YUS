@@ -25,8 +25,8 @@ const HomeS7 = () => {
                         </svg>
                     </div>
                     <div className="s7_item_content">
-                        <h4> Free Shipping </h4>
-                        <p>Free Shipping for orders over £130 </p>
+                        <h4>Имеется доставка</h4>
+                        <p>Быстро и удобно</p>
                     </div>
                 </div>
                 <div data-aos="fade-up" className="col-3 s7_item">
@@ -44,8 +44,8 @@ const HomeS7 = () => {
                         </svg>
                     </div>
                     <div className="s7_item_content">
-                        <h4> Money Guarantee </h4>
-                        <p> Within 30 days for an exchange. </p>
+                        <h4>Удобная оплата</h4>
+                        <p>Оплачивайте так, как вам удобно.</p>
                     </div>
                 </div>
                 <div data-aos="fade-up" className="col-3 s7_item">
@@ -68,8 +68,8 @@ const HomeS7 = () => {
                         </svg>
                     </div>
                     <div className="s7_item_content">
-                        <h4> Flexible Payment </h4>
-                        <p> Pay with Multiple Credit Cards </p>
+                        <h4>Удобное расположение</h4>
+                        <p>Найти нас легко — заходите в гости.</p>
                     </div>
                 </div>
                 <div data-aos="fade-up" className="col-3 s7_item">
@@ -102,8 +102,8 @@ const HomeS7 = () => {
                         </svg>
                     </div>
                     <div className="s7_item_content">
-                        <h4> Online Support </h4>
-                        <p> 24 hours a day, 7 days a week </p>
+                        <h4>График работы:</h4>
+                        <p>24 часа в сутки, 7 дней в неделю</p>
                     </div>
                 </div>
             </div>

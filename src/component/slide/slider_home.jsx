@@ -1,8 +1,8 @@
 import React from 'react';
-import slide_1 from "@/assets/home_origin/home_slide/home_header_1.jpg";
+import slide_1 from "@/assets/allphoto/home_header_1.jpg";
 import {Link} from "react-router-dom";
-import slide_2 from "@/assets/home_origin/home_slide/home_header_2.jpg";
-import slide_3 from "@/assets/home_origin/home_slide/home_header_3.jpg";
+import slide_2 from "@/assets/allphoto/home_header_2.jpg";
+import slide_3 from "@/assets/allphoto/home_header_3.jpg";
 import "./slider_home.css"
 import {useTranslation} from "react-i18next";
 
@@ -21,7 +21,7 @@ const SliderHome = () => {
                     <div data-aos="fade-up" className="carousel-caption_singl">
                         <span>{t("home.home_slide.slide_1.sub_title")}</span>
                         <h5 dangerouslySetInnerHTML={{__html:t("home.home_slide.slide_1.title")}}></h5>
-                        <Link to={"#"}>Shop Now</Link>
+                        <Link to={"#"}>Сделать заказ</Link>
                     </div>
                 </div>
                 <div className="carousel-item">
@@ -29,7 +29,7 @@ const SliderHome = () => {
                     <div data-aos="fade-up" className="carousel-caption_singl">
                         {/*<span>Whimsy Blossoms </span>*/}
                         {/*<h5>Embrace Playful Sophistication </h5>*/}
-                        {/*<Link to={"#"}>Shop Now</Link>*/}
+                        {/*<Link to={"#"}>Сделать заказ</Link>*/}
                     </div>
                 </div>
                 <div className="carousel-item">
@@ -37,7 +37,7 @@ const SliderHome = () => {
                     <div data-aos="fade-up" className="carousel-caption_singl">
                         {/*<span>Chic Reverie </span>*/}
                         {/*<h5>Fashioning Dreams into Reality </h5>*/}
-                        {/*<Link to={"#"}>Shop Now</Link>*/}
+                        {/*<Link to={"#"}>Сделать заказ</Link>*/}
                     </div>
                 </div>
             </div>

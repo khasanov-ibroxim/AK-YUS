@@ -1,18 +1,14 @@
-import s2_item_1 from "@/assets/home_origin/s2/5V1A0451_resized.jpg"
-import s2_item_2 from "@/assets/home_origin/s2/5V1A0432_resized.jpg"
-import s2_item_3 from "@/assets/home_origin/s2/5V1A0469_resized.jpg"
-import s2_item_4 from "@/assets/home_origin/s2/5V1A0513_resized.jpg"
-import s2_item_5 from "@/assets/home_origin/s2/5V1A9756_resized.jpg"
-import s2_item_6 from "@/assets/home_origin/s2/5V1A9613_resized.jpg"
+import s2_item_1 from "@/assets/allphoto/5V1A0065_resized.jpg"
+import s2_item_2 from "@/assets/allphoto/5V1A0247_resized.jpg"
+import s2_item_3 from "@/assets/allphoto/5V1A0194_resized.jpg"
+import s2_item_4 from "@/assets/allphoto/5V1A0331_resized.jpg"
 
-import s4_item_1 from "@/assets/home_origin/s4/5V1A0045_resized.jpg"
-import s4_item_2 from "@/assets/home_origin/s4/5V1A0202_resized.jpg"
-import s4_item_3 from "@/assets/home_origin/s4/5V1A0283_resized.jpg"
-import s4_item_4 from "@/assets/home_origin/s4/5V1A0392_resized.jpg"
-import s4_item_5 from "@/assets/home_origin/s4/5V1A0499_resized.jpg"
-import s4_item_6 from "@/assets/home_origin/s4/5V1A0523_resized.jpg"
-import s4_item_7 from "@/assets/home_origin/s4/5V1A0603_resized.jpg"
-import s4_item_8 from "@/assets/home_origin/s4/5V1A9638_resized.jpg"
+
+import s4_item_1 from "@/assets/allphoto/5V1A0138_resized.jpg"
+import s4_item_2 from "@/assets/allphoto/5V1A0580_resized.jpg"
+import s4_item_3 from "@/assets/allphoto/5V1A0611_resized.jpg"
+import s4_item_4 from "@/assets/allphoto/5V1A9803_resized.jpg"
+
 
 export const Category = [
     {
@@ -70,18 +66,6 @@ export const BestSell = [
         name: "Short sleeve mushrooms T-shirt 4",
         price: "$27.90",
         images: s2_item_4,
-    }, {
-        id: 4,
-        cat_id: 0,
-        name: "Short sleeve mushrooms T-shirt 5",
-        price: "$27.90",
-        images: s2_item_5,
-    }, {
-        id: 5,
-        cat_id: 0,
-        name: "Short sleeve mushrooms T-shirt 6",
-        price: "$27.90",
-        images: s2_item_6,
     },
 
 ]
@@ -110,18 +94,6 @@ export const Arrivals = [
         name: "Short sleeve mushrooms T-shirt 4",
         price: "$27.90",
         images: s4_item_4,
-    }, {
-        id: 4,
-        cat_id: 0,
-        name: "Short sleeve mushrooms T-shirt 5",
-        price: "$27.90",
-        images: s4_item_5,
-    }, {
-        id: 5,
-        cat_id: 0,
-        name: "Short sleeve mushrooms T-shirt 6",
-        price: "$27.90",
-        images: s4_item_6,
     },
 
 ]

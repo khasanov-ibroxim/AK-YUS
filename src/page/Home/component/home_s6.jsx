@@ -2,35 +2,35 @@ import React, {useRef, useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {FreeMode} from "swiper/modules";
 import {Link} from "react-router-dom";
-import s6_1 from "@/assets/home_origin/s6/5V1A0028_resized.jpg"
-import s6_2 from "@/assets/home_origin/s6/5V1A9663_resized.jpg"
-import s6_3 from "@/assets/home_origin/s6/5V1A0169_resized.jpg"
-import s6_4 from "@/assets/home_origin/s6/5V1A9833_resized.jpg"
+import s6_1 from "@/assets/allphoto/5V1A0028_resized.jpg"
+import s6_2 from "@/assets/allphoto/5V1A9663_resized.jpg"
+import s6_3 from "@/assets/allphoto/5V1A0169_resized.jpg"
+import s6_4 from "@/assets/allphoto/5V1A9833_resized.jpg"
 
 const HomeS6 = () => {
     const swiperRef = useRef(null); // Swiper uchun ref
     const [posts, setPosts] = useState([
         {
             img: s6_1,
-            name: "Fashion Forward: Emerging Trends You Need to Know",
+            name: "Когда Ткань — это Послание. Мы чувствуем одежду, прежде чем увидим.",
             create: "admin",
             data: "20.12.2024"
         },
         {
             img: s6_2,
-            name: "Unveiling Elegance: Timeless Fashion Trends for Women",
+            name: "Линия Лаконичности:Образы, которые не требуют объяснений.",
             create: "admin",
             data: "20.12.2024"
         },
         {
             img: s6_3,
-            name: "Fashion Forward: Emerging Trends You Need to Know",
+            name: "Мода Завтрашнего Дня: Свежий взгляд на силуэты и цвета нового сезона.",
             create: "admin",
             data: "20.12.2024"
         },
         {
             img: s6_4,
-            name: "Fashion Forward: Emerging Trends You Need to Know",
+            name: "Цвет Настроения — Тепло. Глубокие природные тона, уютные ткани и простые формы.",
             create: "admin",
             data: "20.12.2024"
         },
@@ -39,8 +39,8 @@ const HomeS6 = () => {
         <div className={"home_s6 pt-5 pb-5"}>
             <div className="container-sm">
                 <div className="home_title_content pb-5" data-aos="fade-up">
-                    <span>Latest posts</span>
-                    <h2>Blog & Insights</h2>
+                    <span>Мода в деталях</span>
+                    <h2>Тренды & Эстетика</h2>
                 </div>
                 <div className="home_s6_swiper_box">
                     <div className="custom-nav" >

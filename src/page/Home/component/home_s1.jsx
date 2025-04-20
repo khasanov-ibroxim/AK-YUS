@@ -1,8 +1,8 @@
 import React from 'react';
-import s1_left from "@/assets/home_origin/home_s1/5V1A0138_resized.jpg"
-import s1_right_1 from "@/assets/home_origin/home_s1/5V1A0222_resized.jpg"
-import s1_right_2 from "@/assets/home_origin/home_s1/5V1A0321_resized.jpg"
-import s1_right_3 from "@/assets/home_origin/home_s1/5V1A0337_resized.jpg"
+import s1_left from "@/assets/allphoto/5V1A0138_resized.jpg"
+import s1_right_1 from "@/assets/allphoto/5V1A0222_resized.jpg"
+import s1_right_2 from "@/assets/allphoto/5V1A0321_resized.jpg"
+import s1_right_3 from "@/assets/allphoto/5V1A0337_resized.jpg"
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -21,9 +21,9 @@ const HomeS1 = () => {
                                 <div data-aos="fade-up" className="col-lg-12 mb-1 home_s1_item">
                                     <img src={s1_right_1} alt=""/>
                                     <div className="home_s1_item_text">
-                                        <span>Chasing Urban Allure</span>
-                                        <h2>Effortless Style for the Modern Woman</h2>
-                                        <Link to={"#"}>Shop Now</Link>
+                                        <span>Комфорт с шиком</span>
+                                        <h2>Уют и стиль для городской повседневности.</h2>
+                                        <Link to={"#"}>Сделать заказ</Link>
                                     </div>
                                 </div>
 
@@ -40,9 +40,9 @@ const HomeS1 = () => {
                                         top: "10%",
 
                                     }}>
-                                        <span style={{color: "white"}}>Urban Elegance</span>
-                                        <h2 style={{color: "white"}}>Elevate Your Everyday Look</h2>
-                                        <Link to={"#"}>Shop Now</Link>
+                                        <span style={{color: "#fff" , fontWeight:"bold"}}>Комфортно стильно</span>
+                                        <h2 style={{color: "black"}}>Вырази себя через комфорт. </h2>
+                                        <Link to={"#"}>Сделать заказ</Link>
                                     </div>
                                 </div>
                                 <div data-aos="fade-up"
@@ -51,12 +51,13 @@ const HomeS1 = () => {
                                     <img src={s1_right_2} alt="" style={{paddingRight: "2px"}}/>
                                     <div className="home_s1_item_left_text" style={{
                                         width: "70%",
-                                        top: "10%",
-
+                                        top: "0%",
+                                        background:"rgba(255,255,255,.2)",
+                                        paddingTop:"10%"
                                     }}>
-                                        <span style={{color: "black"}}>Urban Elegance</span>
-                                        <h2 style={{color: "black"}}>Elevate Your Everyday Look</h2>
-                                        <Link to={"#"}>Shop Now</Link>
+                                        <span style={{color: "black", fontWeight:"bold" }}>Современный уют</span>
+                                        <h2 style={{color: "black"}}> Каждый день с характером</h2>
+                                        <Link to={"#"}>Сделать заказ</Link>
                                     </div>
                                 </div>
                             </div>
@@ -65,9 +66,9 @@ const HomeS1 = () => {
                     <div data-aos="fade-up" className="col-lg-5 home_s1_item_4 home_s1_item">
                         <img src={s1_left} alt=""/>
                         <div className="home_s1_item_text" style={{left: "30px"}}>
-                            <span>Adorable Essentials</span>
-                            <h2>Everyday Cuteness for Kids</h2>
-                            <Link to={"#"}>Shop Now</Link>
+                            <span>Минимал и уют</span>
+                            <h2>Будь собой. Будь в стиле.</h2>
+                            <Link to={"#"}>Сделать заказ</Link>
                         </div>
                     </div>
                 </div>

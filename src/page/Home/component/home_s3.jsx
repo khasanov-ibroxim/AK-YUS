@@ -2,7 +2,9 @@ import React, {useEffect, useState} from "react";
 import {CaretRightOutlined, CloseOutlined} from "@ant-design/icons";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import video_poster from "@/assets/home_origin/s3/5V1A0356_resized.jpg"
+import video_poster from "@/assets/allphoto/5V1A0286_resized.jpg"
+
+
 const HomeS3 = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });

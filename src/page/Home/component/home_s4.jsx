@@ -55,9 +55,9 @@ const HomeS4 = () => {
                     ))}
                 </Swiper>
             </div>
-            <div className="home_s4_show_more" data-aos="fade-up">
-                <Link to={"#"}>Show more products</Link>
-            </div>
+            {/*<div className="home_s4_show_more" data-aos="fade-up">*/}
+            {/*    <Link to={"#"}>Show more products</Link>*/}
+            {/*</div>*/}
         </div>
     );
 };
