@@ -92,6 +92,9 @@
     display: none !important;
 }
 @media screen and (max-width: 1000px){
+    #home_sliderID{
+        height: 75vh !important;
+    }
     .carousel-indicators{
         display: flex !important;
     }
@@ -109,6 +112,9 @@
 }
 
 @media screen and (max-width: 650px){
+    #home_sliderID{
+        height: 60vh;
+    }
     .carousel-caption_singl span{
         font-size: .7rem;
     }
@@ -122,6 +128,9 @@
     }
 }
 @media screen and (max-width: 450px){
+    #home_sliderID{
+        height: 50vh !important;
+    }
     .carousel-caption_singl span{
         font-size: .5rem;
     }
