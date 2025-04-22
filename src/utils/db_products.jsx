@@ -1,7 +1,7 @@
-import s2_item_1 from "@/assets/allphoto/5V1A0065_resized.jpg"
+import s2_item_1 from "@/assets/allphoto/5V1A0003_resized.jpg"
 import s2_item_2 from "@/assets/allphoto/5V1A0247_resized.jpg"
 import s2_item_3 from "@/assets/allphoto/5V1A0194_resized.jpg"
-import s2_item_4 from "@/assets/allphoto/5V1A0331_resized.jpg"
+import s2_item_4 from "@/assets/allphoto/5V1A0392_resized.jpg"
 
 
 import s4_item_1 from "@/assets/allphoto/5V1A0138_resized.jpg"

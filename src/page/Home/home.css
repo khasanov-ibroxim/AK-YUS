@@ -494,7 +494,9 @@
     object-fit: cover;
     transition: 1s;
 }
-
+.s6_item_content{
+    height: 30%;
+}
 .s6_item:hover img {
     transform: scale(1.1);
 }

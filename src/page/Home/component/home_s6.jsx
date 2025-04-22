@@ -18,7 +18,7 @@ const HomeS6 = () => {
         },
         {
             img: s6_2,
-            name: "Линия Лаконичности:Образы, которые не требуют объяснений.",
+            name: "Линия Лаконичности: Образы , которые не требуют объяснений.",
             create: "admin",
             data: "20.12.2024"
         },
@@ -78,10 +78,13 @@ const HomeS6 = () => {
                                     <div className={"s6_item_img"}>
                                         <Link to={"#"}><img src={product.img} alt={product.name}/></Link>
                                     </div>
-                                    <div className="s6_item_title">
-                                        By <span>{product.create}</span> • {product.data}
+                                    <div className="s6_item_content">
+                                        <div className="s6_item_title">
+                                            By <span>{product.create}</span> • {product.data}
+                                        </div>
+                                        <h1><Link to={"#"}>{product.name}</Link></h1>
                                     </div>
-                                    <h1><Link to={"#"}>{product.name}</Link></h1>
+
                                 </div>
                             </SwiperSlide>
                         ))}

@@ -58,7 +58,7 @@ const AboutComponent = () => {
         <div className="about_component">
             <div className="row">
                 <div className="col-lg-6">
-                    <img src={index_img} alt="" height={"70%"} style={{objectFit:"cover"}}/>
+                    <img src={index_img} alt="" height={"70%"} style={{objectFit:"contain"}}/>
                 </div>
                 <div className="col-lg-6">
                     <h2>{t("about.about_component.title")}</h2>
