@@ -23,7 +23,7 @@ const ProductCard = ({product , key}) => {
             <div className="home_s2_item_bottom">
                 <span>{categoryName}</span> {/* Kategoriya nomi dinamik chiqadi */}
                 <h5><Link to={"#"}>{product.name}</Link></h5>
-                <p>{product.price}</p>
+
             </div>
         </div>
     );

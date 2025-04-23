@@ -40,7 +40,7 @@ const HomeS1 = () => {
                                         top: "10%",
 
                                     }}>
-                                        <span style={{color: "#fff" , fontWeight:"bold"}}>Комфортно стильно</span>
+                                        <span style={{color: "#000" , fontWeight:"bold"}}>Комфортно стильно</span>
                                         <h2 style={{color: "black"}}>Вырази себя через комфорт. </h2>
                                         <Link to={"#"}>Сделать заказ</Link>
                                     </div>

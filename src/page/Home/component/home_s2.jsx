@@ -14,8 +14,8 @@ const HomeS2 = () => {
     return (
         <div className={"home_s2 pt-5"}>
             <div className="home_title_content pb-5" data-aos="fade-up">
-                <span>top Products</span>
-                <h2>Best Sellers</h2>
+                <span>Лучшее из лучшего</span>
+                <h2> Наши бестселлеры</h2>
             </div>
             <div className="custom-nav" data-aos="fade-up">
                 <button

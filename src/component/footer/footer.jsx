@@ -39,48 +39,39 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-6">
                     <div className="footer_item_def">
-                            <h4>About Us</h4>
+                            <h4>О нас</h4>
                             <ul>
-                                <li><Link to={"#"}>Our Story</Link></li>
-                                <li><Link to={"#"}>Mission & Values</Link></li>
-                                <li><Link to={"#"}>Meet the Team</Link></li>
-                                <li><Link to={"#"}>Sustainability Efforts</Link></li>
-                                <li><Link to={"#"}>Brand Partnerships</Link></li>
-                                <li><Link to={"#"}>Influencer Collaborations</Link></li>
+                                <li><Link to={"#"}>Наша история</Link></li>
+                                <li><Link to={"#"}>Наша миссия</Link></li>
+                                <li><Link to={"#"}>Свяжитесь с нами</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-6">
                         <div className="footer_item_def">
-                            <h4>Accessibility</h4>
+                            <h4>Покупателям</h4>
                             <ul>
-                                <li><Link to={"#"}>Accessibility Statement</Link></li>
-                                <li><Link to={"#"}>Site Map</Link></li>
-                                <li><Link to={"#"}>Web Accessibility Options</Link></li>
-                                <li><Link to={"#"}>ADA Compliance</Link></li>
-                                <li><Link to={"#"}>Privacy Policy</Link></li>
-                                <li><Link to={"#"}>Terms of Service</Link></li>
+                                <li><Link to={"#"}>Доставка и оплата</Link></li>
+                                <li><Link to={"#"}>Вопросы</Link></li>
+                                <li><Link to={"#"}>Таблица размеров</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-6">
                         <div className="footer_item_def">
-                            <h4>Join Our Community</h4>
-                            <ul>
-                                <li><Link to={"#"}>VIP Membership</Link></li>
-                                <li><Link to={"#"}>Loyalty Program</Link></li>
-                                <li><Link to={"#"}>Customer Reviews</Link></li>
-                                <li><Link to={"#"}>Style Forums</Link></li>
-                                <li><Link to={"#"}>Job Openings</Link></li>
-                                <li><Link to={"#"}>Culture and Values</Link></li>
+                            <h4>Следите за нами</h4>
+                            <p>Будьте в курсе новинок и акций</p>
+                            <ul className={"d-flex flex-row"}>
+                               <li><Link to={"#"}><InstagramIcon/></Link></li>
+                               <li><Link to={"#"}><TelegramIcon/></Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-6">
                         <div className="footer_last_item">
-                            <h3>Let’s get in touch</h3>
-                            <p>Sign up for our newsletter and receive 10% off your</p>
-                            <Link to={CONTACT}>Contact us <EastIcon/></Link>
+                            <h3>Связаться с нами</h3>
+                            <p>Задайте вопрос или оформите заказ — мы всегда на связи</p>
+                            <Link to={CONTACT}>Контакты <EastIcon/></Link>
                         </div>
                     </div>
                 </div>

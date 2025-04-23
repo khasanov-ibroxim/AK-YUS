@@ -11,8 +11,8 @@ const HomeS4 = () => {
     return (
         <div className={"home_s4 pt-5 pb-5"}>
             <div className="home_title_content pb-5" data-aos="fade-up">
-                <span>Latest Products</span>
-                <h2>New Arrivals</h2>
+                <span>Модный стиль для всех</span>
+                <h2>Свежие тренды </h2>
             </div>
 
             <div className="row g-1" data-aos="fade-up">
