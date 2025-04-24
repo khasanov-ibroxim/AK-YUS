@@ -2,7 +2,7 @@ import React from 'react';
 import s1_left from "@/assets/allphoto/5V1A0138_resized.jpg"
 import s1_right_1 from "@/assets/allphoto/5V1A0222_resized.jpg"
 import s1_right_2 from "@/assets/allphoto/5V1A0321_resized.jpg"
-import s1_right_3 from "@/assets/allphoto/5V1A0337_resized.jpg"
+import s1_right_3 from "@/assets/allphoto/5V1A0337_resized_v1.jpg"
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -41,7 +41,7 @@ const HomeS1 = () => {
 
                                     }}>
                                         <span style={{color: "#000" , fontWeight:"bold"}}>Комфортно стильно</span>
-                                        <h2 style={{color: "black"}}>Вырази себя через комфорт. </h2>
+                                        <h2 style={{color: "black"}}>Вырази себя <br/> через комфорт. </h2>
                                         <Link to={"#"}>Сделать заказ</Link>
                                     </div>
                                 </div>
@@ -50,8 +50,10 @@ const HomeS1 = () => {
                                     <div className="home_s1_item_left_3_opacity"></div>
                                     <img src={s1_right_2} alt="" style={{paddingRight: "2px"}}/>
                                     <div className="home_s1_item_left_text" style={{
-                                        width: "70%",
+                                        width: "100%",
                                         top: "0%",
+                                        left:0,
+                                        paddingLeft:"10%",
                                         background:"rgba(255,255,255,.2)",
                                         paddingTop:"10%"
                                     }}>

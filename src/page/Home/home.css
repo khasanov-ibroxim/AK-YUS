@@ -118,7 +118,6 @@
 .home_s1_item_4 img {
     height: 98%;
     overflow: hidden;
-    transform: scale(1.1);
 }
 .home_s1_item_4 img:hover img{transform: scale(1.2)}
 .home_s1_item:hover img, .home_s1_item_3:hover img {
