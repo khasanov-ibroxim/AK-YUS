@@ -7,29 +7,8 @@ import video_poster from "@/assets/allphoto/5V1A0286_resized.jpg"
 
 const HomeS3 = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     const {t} = useTranslation();
-    useEffect(() => {
-        const targetDate = new Date("2025-03-08T00:00:00").getTime();
 
-        const interval = setInterval(() => {
-            const now = new Date().getTime();
-            const difference = targetDate - now;
-
-            if (difference <= 0) {
-                clearInterval(interval);
-                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-            } else {
-                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-                setTimeLeft({ days, hours, minutes, seconds });
-            }
-        }, 1000);
-
-        return () => clearInterval(interval);
-    }, []);
     return (
         <div className="home_s3 pt-5  pb-5" >
             <div className="row pt-5">
@@ -38,7 +17,7 @@ const HomeS3 = () => {
                         <img
                             src={video_poster}
                             alt="Mixtas Poster"
-                            className="w-full h-auto cursor-pointer"
+                            className="w-full h-75 object-fit-cover cursor-pointer"
                             onClick={() => setIsOpen(true)}
                         />
                         <button
@@ -53,26 +32,7 @@ const HomeS3 = () => {
                     <div className="home_s3_content">
                         <h2 dangerouslySetInnerHTML={{__html:t("home.home_s3.title")}}></h2>
                         <p>{t("home.home_s3.content")}</p>
-                        <div className="home_s3_timer">
-                            <div className="home_s3_timer_item">
-                                <span>{String(timeLeft.days).padStart(2, '0')}</span>
-                                <p>day</p>
-                            </div>
-                            <
-                                div className="home_s3_timer_item">
-                                <span>{String(timeLeft.hours).padStart(2, '0')}</span>
-                                <p>Hours</p>
-                            </div>
-                            <div className="home_s3_timer_item">
-                                <span>{String(timeLeft.minutes).padStart(2, '0')}</span>
-                                <p>Minutes</p>
-                            </div>
-                            <div className="home_s3_timer_item">
-                                <span>{String(timeLeft.seconds).padStart(2, '0')}</span>
-                                <p>Seconds</p>
-                            </div>
-                        </div>
-                        <Link to={""}>Shop the sell</Link>
+                        <Link to={"#"}>Продукция</Link>
                     </div>
                 </div>
             </div>

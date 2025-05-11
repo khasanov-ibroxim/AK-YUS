@@ -17,7 +17,7 @@ const HomeS2 = () => {
                 <span>Лучшее из лучшего</span>
                 <h2> Наши бестселлеры</h2>
             </div>
-            <div className="custom-nav" data-aos="fade-up">
+            {BestSell.length > 4 && <div className="custom-nav" data-aos="fade-up">
                 <button
                     className="swiper-button-prev"
                     onClick={() => swiperRef.current.swiper.slidePrev()}
@@ -29,7 +29,7 @@ const HomeS2 = () => {
                     onClick={() => swiperRef.current.swiper.slideNext()}
                 >
                 </button>
-            </div>
+            </div>}
             <Swiper
                 ref={swiperRef} // Swiperga ref qo'shamiz
                 slidesPerView={4}
@@ -40,7 +40,7 @@ const HomeS2 = () => {
                 loop={true}
                 breakpoints={{
                     320: {slidesPerView: 1,},  // Mobil (<= 320px)
-                    576: {slidesPerView: 2, },  // Kichik ekran (<= 576px)
+                    576: {slidesPerView: 2,},  // Kichik ekran (<= 576px)
                     768: {slidesPerView: 3, },  // O‘rta ekran (<= 768px)
                     1024: {slidesPerView: 4, },
                 }}

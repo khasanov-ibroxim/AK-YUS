@@ -6,12 +6,13 @@ import {useTranslation} from "react-i18next";
 import index_img from "@/assets/allphoto/5V1A9975_resized.jpg"
 
 import item_1 from "@/assets/allphoto/5V1A0081_resized.jpg"
-import item_2 from "@/assets/allphoto/5V1A0432_resized.jpg"
+import item_2 from "@/assets/allphoto/5V1A0276_resized.jpg"
 import item_3 from "@/assets/allphoto/5V1A0543_resized.jpg"
 import item_4 from "@/assets/allphoto/5V1A0590_resized.jpg"
 import item_5 from "@/assets/allphoto/5V1A0607_resized.jpg"
 import item_6 from "@/assets/allphoto/5V1A0615_resized.jpg"
 import item_7 from "@/assets/allphoto/5V1A9843_resized.jpg"
+import item_8 from "@/assets/allphoto/5V1A0432_resized.jpg"
 
 
 const AboutComponent = () => {
@@ -50,6 +51,11 @@ const AboutComponent = () => {
         },
         {
             img: item_7,
+            name: "Marcus Turner",
+            subname:"CEO/FOUNDER"
+        },
+        {
+            img: item_8,
             name: "Marcus Turner",
             subname:"CEO/FOUNDER"
         },

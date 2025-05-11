@@ -1,7 +1,7 @@
 import React from 'react';
 import s1_left from "@/assets/allphoto/5V1A0138_resized.jpg"
 import s1_right_1 from "@/assets/allphoto/5V1A0222_resized.jpg"
-import s1_right_2 from "@/assets/allphoto/5V1A0321_resized.jpg"
+import s1_right_2 from "@/assets/allphoto/5V1A9837_resized.jpg"
 import s1_right_3 from "@/assets/allphoto/5V1A0337_resized_v1.jpg"
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
@@ -48,14 +48,10 @@ const HomeS1 = () => {
                                 <div data-aos="fade-up"
                                      className="col-lg-6 home_s1_item_left_3 home_s1_item_left">
                                     <div className="home_s1_item_left_3_opacity"></div>
-                                    <img src={s1_right_2} alt="" style={{paddingRight: "2px"}}/>
+                                    <img src={s1_right_2} alt=""/>
                                     <div className="home_s1_item_left_text" style={{
-                                        width: "100%",
-                                        top: "0%",
-                                        left:0,
-                                        paddingLeft:"10%",
-                                        background:"rgba(255,255,255,.2)",
-                                        paddingTop:"10%"
+                                        width: "70%",
+                                        top: "10%",
                                     }}>
                                         <span style={{color: "black", fontWeight:"bold" }}>Современный уют</span>
                                         <h2 style={{color: "black"}}> Каждый день с характером</h2>
@@ -65,7 +61,7 @@ const HomeS1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" className="col-lg-5 home_s1_item_4 home_s1_item">
+                    <div data-aos="fade-up" className="col-lg-5  home_s1_item_4 home_s1_item">
                         <img src={s1_left} alt=""/>
                         <div className="home_s1_item_text" style={{left: "30px"}}>
                             <span>Минимал и уют</span>
