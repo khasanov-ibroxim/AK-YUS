@@ -1,5 +1,5 @@
 import React from 'react';
-import slide_1 from "@/assets/allphoto/home_header_1.jpg";
+import slide_1 from "@/assets/allphoto/home_header_1.png";
 import {Link} from "react-router-dom";
 import slide_2 from "@/assets/allphoto/home_header_2.jpg";
 import slide_3 from "@/assets/allphoto/home_header_3.jpg";

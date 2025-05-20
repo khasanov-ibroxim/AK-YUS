@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
-import {FreeMode} from "swiper/modules";
+import {FreeMode , Autoplay} from "swiper/modules";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import index_img from "@/assets/allphoto/5V1A9975_resized.jpg"
@@ -97,7 +97,11 @@ const AboutComponent = () => {
                     slidesPerView={3}
                     spaceBetween={0}
                     pagination={{clickable: true}}
-                    modules={[FreeMode]}
+                    modules={[FreeMode , Autoplay]}
+                    autoplay={{
+                        speed: 200,
+                        autoplaySpeed: 200,
+                    }}
                     grabCursor={true}
                     loop={true}
                     breakpoints={{

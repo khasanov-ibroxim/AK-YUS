@@ -61,7 +61,7 @@ const HomeS1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" className="col-lg-5  home_s1_item_4 home_s1_item">
+                    <div  className="col-lg-5  home_s1_item_4 home_s1_item">
                         <img src={s1_left} alt=""/>
                         <div className="home_s1_item_text" style={{left: "30px"}}>
                             <span>Минимал и уют</span>
