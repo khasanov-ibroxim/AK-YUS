@@ -268,17 +268,12 @@ const ProductSolo = () => {
                         className="mySwiper"
                         data-aos="fade-up"
                     >
-                        {posts.map((product, index) => (
+                        {currentArray.map((product, index) => (
                             <SwiperSlide key={index}>
                                 <div className="s6_item">
                                     <div className={"s6_item_img"} style={{height: "100%"}}>
-                                        <img src={product.img} alt={product.name}/>
+                                        <img src={product.images[0]} alt={product.name}/>
                                     </div>
-                                    {/*<h1><Link to={"#"}>{product.name}</Link></h1>*/}
-                                    {/*<div className="s6_item_title">*/}
-                                    {/*    {product.subname}*/}
-                                    {/*</div>*/}
-
                                 </div>
                             </SwiperSlide>
                         ))}
