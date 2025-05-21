@@ -5,19 +5,19 @@ import s2_item_4 from "@/assets/allphoto/5V1A0392_resized.jpg"
 import s2_item_5 from "@/assets/allphoto/5V1A0053_resized.jpg"
 
 import s2_item_1_detail from "@/assets/allphoto/5V1A0003_resized_deteil.jpg"
-import s2_item_2_detail from "@/assets/allphoto/5V1A0247_resized_deteil.jpg"
+import s2_item_2_detail from "@/assets/allphoto/5V1A0276_resized.jpg"
 import s2_item_3_detail from "@/assets/allphoto/5V1A0194_resized_deteil.png"
 import s2_item_4_detail from "@/assets/allphoto/5V1A0392_resized_deteil.png"
 import s2_item_5_detail from "@/assets/allphoto/5V1A0053_resized_deteil.jpg"
 
 
 import s4_item_1 from "@/assets/allphoto/5V1A0321_resized.jpg"
-import s4_item_2 from "@/assets/allphoto/s4_item_2.png"
+import s4_item_2 from "@/assets/allphoto/5V1A9930_resized.jpg"
 import s4_item_3 from "@/assets/allphoto/5V1A0475_resized.jpg"
 import s4_item_4 from "@/assets/allphoto/5V1A0543_resized.jpg"
 
 import s4_item_1_detail from "@/assets/allphoto/5V1A0301_resized.jpg"
-import s4_item_2_detail from "@/assets/allphoto/5V1A0331_resized.jpg"
+import s4_item_2_detail from "@/assets/allphoto/5V1A9889_resized.jpg"
 import s4_item_3_detail from "@/assets/allphoto/5V1A0468_resized.jpg"
 import s4_item_4_detail from "@/assets/allphoto/5V1A0532_resized.jpg"
 

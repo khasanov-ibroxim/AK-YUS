@@ -88,7 +88,10 @@
     font-family: var(--font_outfit), serif;
     margin-bottom: 30px;
 }
-
+.home_s1_item_left:hover img{
+    transform: scale(1.2);
+    transition:  .8s;
+}
 .home_s1_item_text span , .home_s1_item_left_text span {
     font-family: var(--font_playfair), serif;
     color: #222;

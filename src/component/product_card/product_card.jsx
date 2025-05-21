@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import {Category} from "@/utils/db_products.jsx";
 import {Link} from "react-router-dom";
+import {PRODUCT_SOLO} from "@/utils/consts.jsx";
 
-const ProductCard = ({product, key}) => {
+const ProductCard = ({product, key , array}) => {
     const [isHovered, setIsHovered] = useState(false);
     const categoryName = Category.find(cat => cat.id === product.cat_id)?.name || "Unknown";
 
@@ -15,13 +16,14 @@ const ProductCard = ({product, key}) => {
     }
 
     return (
-        <div
+        <Link
             key={key}
             className="home_s2_item"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-        >
-            <Link className="home_s2_item_top" to={"#"}>
+            onClick={()=>window.scrollTo(0, 0)}
+         to={PRODUCT_SOLO.replace(":product_id" , product.id).replace(":array" , array)}>
+            <Link onClick={()=>window.scrollTo(0, 0)} className="home_s2_item_top" to={PRODUCT_SOLO.replace(":product_id" , product.id).replace(":array" , array)}>
                 <img
                     src={imgChecker()}
                     alt={product.name}
@@ -29,9 +31,9 @@ const ProductCard = ({product, key}) => {
             </Link>
             <div className="home_s2_item_bottom">
                 <span>{categoryName}</span> {/* Kategoriya nomi dinamik chiqadi */}
-                <h5><Link to={"#"}>{product.name}</Link></h5>
+                <h5><Link onClick={()=>window.scrollTo(0, 0)} to={PRODUCT_SOLO.replace(":product_id" , product.id).replace(":array" , array)}>{product.name}</Link></h5>
             </div>
-        </div>
+        </Link>
     );
 };
 

@@ -49,7 +49,7 @@ const HomeS2 = () => {
             >
                 {BestSell.slice(0, 5).map((product, index) => (
                     <SwiperSlide key={index}>
-                        <ProductCard product={product} key={index}/>
+                        <ProductCard product={product} key={index} array={"BestSell"}/>
                     </SwiperSlide>
                 ))}
             </Swiper>

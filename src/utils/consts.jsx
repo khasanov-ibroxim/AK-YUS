@@ -3,6 +3,7 @@ import Contact from "../page/contact/contact.jsx";
 import About from "@/page/about/about.jsx";
 import Faqs from "@/page/faqs/faqs.jsx";
 import Blog from "@/page/blog/blog.jsx";
+import ProductSolo from "@/page/product_solo/product_solo.jsx";
 
 
 // routers url
@@ -11,6 +12,7 @@ export const ABOUT = "/about"
 export const FAQS = "/faqs"
 export const CONTACT = "/contact"
 export const BLOG = "/blog/:blog_id"
+export const PRODUCT_SOLO = "/product/:product_id/:array"
 
 
 // routers
@@ -34,5 +36,9 @@ export const ROUTERS =[
     {
         Path:BLOG,
         Component:Blog
+    },
+    {
+        Path:PRODUCT_SOLO,
+        Component:ProductSolo
     },
 ]

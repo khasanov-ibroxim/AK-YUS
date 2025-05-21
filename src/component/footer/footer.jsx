@@ -53,7 +53,6 @@ const Footer = () => {
                             <ul>
                                 <li><Link to={"#"}>Доставка и оплата</Link></li>
                                 <li><Link to={"#"}>Вопросы</Link></li>
-                                <li><Link to={"#"}>Таблица размеров</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -20,7 +20,7 @@ const HomeS4 = () => {
 
                     {Arrivals.map((product, index) => (
                             <div className={"col-lg-3"}>
-                                <ProductCard product={product} key={index}/>
+                                <ProductCard product={product} key={index} array={"Arrivals"}/>
                             </div>
 
 
