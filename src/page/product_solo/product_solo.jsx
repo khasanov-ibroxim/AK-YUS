@@ -177,9 +177,9 @@ const ProductSolo = () => {
                         <div className="product_color product_footer_item">
                             <p>Color</p>
                             <div className="product_footer_item_row">
-                                <div className="product_color_item"></div>
-                                <div className="product_color_item"></div>
-                                <div className="product_color_item"></div>
+                                <div className="product_color_item" style={{background:"#666"}}></div>
+                                <div className="product_color_item" style={{background:"#222"}}></div>
+                                <div className="product_color_item" style={{background:"#e00045"}}></div>
                             </div>
                         </div>
                         <div className="product_size product_footer_item">
