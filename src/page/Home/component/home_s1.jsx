@@ -41,7 +41,7 @@ const HomeS1 = () => {
 
                                     }}>
 
-                                        <h2 style={{color: "black"}}>создай свой стиль</h2>
+                                        <h2 style={{color: "black"}}>Создай свой стиль</h2>
                                         <Link to={"#"}>Сделать заказ</Link>
                                     </div>
                                 </div>
