@@ -12,7 +12,7 @@ const HomeS4 = () => {
         <div className={"home_s4 pt-5 pb-5"}>
             <div className="home_title_content pb-5" data-aos="fade-up">
                 <span>Модный стиль для всех</span>
-                <h2>Свежие тренды </h2>
+                <h2>Коллекция осень-зима 2025</h2>
             </div>
 
             <div className="row g-1 d-flex" data-aos="fade-up">

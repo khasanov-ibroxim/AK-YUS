@@ -70,7 +70,6 @@ const Navbar = () => {
                                 onClick: handleLanguageChange,
                             }}
                             trigger={["click"]}
-
                         >
                             <a onClick={(e) => e.preventDefault()}>
                                 <Space>

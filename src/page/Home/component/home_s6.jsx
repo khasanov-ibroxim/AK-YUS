@@ -11,8 +11,7 @@ const HomeS6 = () => {
         <div className={"home_s6 pt-5 pb-5"}>
             <div className="container-sm">
                 <div className="home_title_content pb-5" data-aos="fade-up">
-                    <span>Мода в деталях</span>
-                    <h2>Тренды & Эстетика</h2>
+
                 </div>
                 <div className="home_s6_swiper_box">
                     <div className="custom-nav" >

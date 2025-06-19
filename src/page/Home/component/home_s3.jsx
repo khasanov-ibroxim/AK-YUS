@@ -10,7 +10,7 @@ const HomeS3 = () => {
     const {t} = useTranslation();
 
     return (
-        <div className="home_s3 pt-5  pb-5" >
+        <div className="home_s3   pb-5" >
             <div className="row pt-5">
                 <div className="col-lg-6" data-aos="fade-up">
                     <div className=" home_s3_video_box">

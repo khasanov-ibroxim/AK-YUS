@@ -11,7 +11,7 @@ const HomeS1 = () => {
     return (
         <div className={"mt_home_100 pt-5"}>
             <div className="home_title_content" data-aos="fade-up">
-                <h2>{t("home.home_s1.title")}</h2>
+
             </div>
             <div className="home_s1_content">
                 <div className="row">
@@ -21,8 +21,8 @@ const HomeS1 = () => {
                                 <div data-aos="fade-up" className="col-lg-12 mb-1 home_s1_item">
                                     <img src={s1_right_1} alt=""/>
                                     <div className="home_s1_item_text">
-                                        <span>Комфорт с шиком</span>
-                                        <h2>Уют и стиль для городской повседневности.</h2>
+
+                                        <h2>Комфорт и качество</h2>
                                         <Link to={"#"}>Сделать заказ</Link>
                                     </div>
                                 </div>
@@ -40,8 +40,8 @@ const HomeS1 = () => {
                                         top: "10%",
 
                                     }}>
-                                        <span style={{color: "#000" , fontWeight:"bold"}}>Комфортно стильно</span>
-                                        <h2 style={{color: "black"}}>Вырази себя <br/> через комфорт. </h2>
+
+                                        <h2 style={{color: "black"}}>создай свой стиль</h2>
                                         <Link to={"#"}>Сделать заказ</Link>
                                     </div>
                                 </div>
@@ -53,8 +53,8 @@ const HomeS1 = () => {
                                         width: "70%",
                                         top: "10%",
                                     }}>
-                                        <span style={{color: "black", fontWeight:"bold" }}>Современный уют</span>
-                                        <h2 style={{color: "black"}}> Каждый день с характером</h2>
+
+                                        <h2 style={{color: "black"}}>Идеальная посадка</h2>
                                         <Link to={"#"}>Сделать заказ</Link>
                                     </div>
                                 </div>
@@ -64,8 +64,8 @@ const HomeS1 = () => {
                     <div  className="col-lg-5  home_s1_item_4 home_s1_item">
                         <img src={s1_left} alt=""/>
                         <div className="home_s1_item_text" style={{left: "30px"}}>
-                            <span>Минимал и уют</span>
-                            <h2>Будь собой. Будь в стиле.</h2>
+
+                            <h2>Свобода в движение</h2>
                             <Link to={"#"}>Сделать заказ</Link>
                         </div>
                     </div>
