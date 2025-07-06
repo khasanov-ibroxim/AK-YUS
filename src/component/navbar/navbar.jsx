@@ -7,7 +7,7 @@ import {useLanguage} from "@/utils/lang/LangContext.jsx";
 import {Dropdown, Space} from "antd";
 import {languages} from "@/utils/lang/langs.jsx";
 import {CloseOutlined, DownOutlined, MenuOutlined} from "@ant-design/icons";
-import {ABOUT, CONTACT, FAQS, HOME} from "@/utils/consts.jsx";
+import {ABOUT, CONTACT, FAQS, HOME, PRODUCT} from "@/utils/consts.jsx";
 
 const Navbar = () => {
     const {handleLanguageChange, selectedLanguage} = useLanguage();
@@ -41,7 +41,9 @@ const Navbar = () => {
                     <ul>
                         <li><Link to={HOME}>{t("navbar.home")}</Link></li>
                         <li><Link to={ABOUT}>{t("navbar.about")}</Link></li>
+                        <li><Link to={PRODUCT}>Продукция</Link></li>
                         <li><Link to={FAQS}>{t("navbar.faqs")}</Link></li>
+
                         <li><Link to={CONTACT}>{t("navbar.contact")}</Link></li>
                         <li className="lang_nav" style={isMobile ? {display: "flex"} : {display: "none"}}>
                             <Dropdown

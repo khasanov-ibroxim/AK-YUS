@@ -4,6 +4,8 @@ import About from "@/page/about/about.jsx";
 import Faqs from "@/page/faqs/faqs.jsx";
 import Blog from "@/page/blog/blog.jsx";
 import ProductSolo from "@/page/product_solo/product_solo.jsx";
+import Products from "@/page/products/products.jsx";
+
 
 
 // routers url
@@ -14,6 +16,7 @@ export const CONTACT = "/contact"
 export const BLOG = "/blog/:blog_id"
 export const PRODUCT_SOLO = "/product/:product_id/:array"
 
+export const PRODUCT = "/product"
 
 // routers
 export const ROUTERS =[
@@ -40,5 +43,9 @@ export const ROUTERS =[
     {
         Path:PRODUCT_SOLO,
         Component:ProductSolo
+    },
+    {
+        Path:PRODUCT,
+        Component:Products
     },
 ]
