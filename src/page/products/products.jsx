@@ -19,7 +19,7 @@ const Products = () => {
     };
 
     return (
-        <div className="main_container">
+        <div className="container-sm faqs top_def_100">
             <Header title={"Продукция"} subtitle={"Продукция"}/>
 
             <div className="products_content">
