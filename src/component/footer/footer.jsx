@@ -70,7 +70,7 @@ const Footer = () => {
                         <div className="footer_last_item">
                             <h3>Связаться с нами</h3>
                             <p>Задайте вопрос или оформите заказ — мы всегда на связи</p>
-                            <Link to={CONTACT}>Контакты <EastIcon/></Link>
+                            <Link to={CONTACT} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Контакты <EastIcon/></Link>
                         </div>
                     </div>
                 </div>
