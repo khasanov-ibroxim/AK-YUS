@@ -1,35 +1,27 @@
 import React, {useRef} from 'react';
 import {Arrivals} from "@/utils/db_products.jsx";
 import ProductCard from "@/component/product_card/product_card.jsx";
-import {Link} from "react-router-dom";
-import {Swiper, SwiperSlide} from "swiper/react";
-import {FreeMode} from "swiper/modules";
+
+import {useTranslation} from "react-i18next";
 
 const HomeS4 = () => {
-    const swiperRef_s4 = useRef(null); // Swiper uchun ref
-
+    const {t} = useTranslation();
     return (
         <div className={"home_s4 pt-5 pb-5"}>
             <div className="home_title_content pb-5" data-aos="fade-up">
-                <span>Модный стиль для всех</span>
-                <h2>Коллекция осень-зима 2025</h2>
+                <span>{t("home.home_s4.subtitle")}</span>
+                <h2>{t("home.home_s4.title")}</h2>
             </div>
 
             <div className="row g-1 d-flex" data-aos="fade-up">
-
-
-                    {Arrivals.map((product, index) => (
+                    {Arrivals(t).map((product, index) => (
                             <div className={"col-lg-3"}>
                                 <ProductCard product={product} key={index} array={"Arrivals"}/>
                             </div>
 
 
                     ))}
-
             </div>
-            {/*<div className="home_s4_show_more" data-aos="fade-up">*/}
-            {/*    <Link to={"#"}>Show more products</Link>*/}
-            {/*</div>*/}
         </div>
     );
 };

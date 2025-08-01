@@ -3,6 +3,7 @@ import {CaretRightOutlined, CloseOutlined} from "@ant-design/icons";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import video_poster from "@/assets/allphoto/5V1A0286_resized.jpg"
+import {PRODUCT} from "@/utils/consts.jsx";
 
 
 const HomeS3 = () => {
@@ -32,7 +33,7 @@ const HomeS3 = () => {
                     <div className="home_s3_content">
                         <h2 dangerouslySetInnerHTML={{__html:t("home.home_s3.title")}}></h2>
                         <p>{t("home.home_s3.content")}</p>
-                        <Link to={"#"}>Продукция</Link>
+                        <Link to={PRODUCT} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t("home.home_s3.btn")}</Link>
                     </div>
                 </div>
             </div>

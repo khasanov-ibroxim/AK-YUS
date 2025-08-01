@@ -98,29 +98,29 @@ export const BestSell = [
     },
 
 ]
-export const Arrivals = [
+export const Arrivals = (t) => [
     {
         id: 0,
         cat_id: 0,
-        name: "Одежда, которая подчёркивает вашу индивидуальность.",
+        name: t("home.arrivals.i1"),
         price: "$27.90",
         images: [s4_item_1 , s4_item_1_detail],
     }, {
         id: 1,
         cat_id: 0,
-        name: "Следите за трендами вместе с нами",
+        name: t("home.arrivals.i2"),
         price: "$27.90",
         images: [s4_item_2 , s4_item_2_detail],
     }, {
         id: 2,
         cat_id: 0,
-        name: "Комфорт и качество в каждой детали.",
+        name: t("home.arrivals.i3"),
         price: "$27.90",
         images: [s4_item_3 ,s4_item_3_detail ],
     }, {
         id: 3,
         cat_id: 0,
-        name: "Подберите идеальный лук за пару кликов — просто и удобно.",
+        name: t("home.arrivals.i4"),
         price: "$27.90",
         images: [s4_item_4 ,s4_item_4_detail ],
     },
@@ -128,25 +128,25 @@ export const Arrivals = [
     {
         id: 4,
         cat_id: 0,
-        name: "У нас всегда актуальные новинки",
+        name: t("home.arrivals.i5"),
         price: "$27.90",
         images: [s4_item_5_detail, s4_item_5],
     }, {
         id: 5,
         cat_id: 0,
-        name: "Стиль для любого случая — от повседневного до торжественного",
+        name: t("home.arrivals.i6"),
         price: "$27.90",
         images: [s4_item_6_detail, s4_item_6],
     }, {
         id: 6,
         cat_id: 0,
-        name: "Быстрая доставка и удобные способы оплаты",
+        name: t("home.arrivals.i7"),
         price: "$27.90",
         images: [s4_item_7_detail, s4_item_7],
     }, {
         id: 7,
         cat_id: 0,
-        name: "Идеальный образ с персональными рекомендациями",
+        name: t("home.arrivals.i8"),
         price: "$27.90",
         images: [s4_item_8_detail, s4_item_8],
     },

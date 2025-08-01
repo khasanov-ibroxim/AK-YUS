@@ -30,7 +30,6 @@ const ProductCard = ({product, key , array}) => {
                 />
             </Link>
             <div className="home_s2_item_bottom">
-                <span>{categoryName}</span> {/* Kategoriya nomi dinamik chiqadi */}
                 <h5><Link onClick={()=>window.scrollTo(0, 0)} to={PRODUCT_SOLO.replace(":product_id" , product.id).replace(":array" , array)}>{product.name}</Link></h5>
             </div>
         </Link>

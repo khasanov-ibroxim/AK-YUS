@@ -21,24 +21,14 @@ const SliderHome = () => {
                     <div data-aos="fade-up" className="carousel-caption_singl">
                         <span>{t("home.home_slide.slide_1.sub_title")}</span>
                         <h5 dangerouslySetInnerHTML={{__html:t("home.home_slide.slide_1.title")}}></h5>
-                        <Link to={"#"}>Сделать заказ</Link>
+                        <Link to={"#"}>{t("home.home_slide.btn")}</Link>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src={slide_2} className="d-block w-100" alt="..."/>
-                    <div data-aos="fade-up" className="carousel-caption_singl">
-                        {/*<span>Whimsy Blossoms </span>*/}
-                        {/*<h5>Embrace Playful Sophistication </h5>*/}
-                        {/*<Link to={"#"}>Сделать заказ</Link>*/}
-                    </div>
                 </div>
                 <div className="carousel-item">
                     <img src={slide_3} className="d-block w-100" alt="..."/>
-                    <div data-aos="fade-up" className="carousel-caption_singl">
-                        {/*<span>Chic Reverie </span>*/}
-                        {/*<h5>Fashioning Dreams into Reality </h5>*/}
-                        {/*<Link to={"#"}>Сделать заказ</Link>*/}
-                    </div>
                 </div>
             </div>
             <a className="carousel-control-prev" href="#home_sliderID" role="button" data-slide="prev">

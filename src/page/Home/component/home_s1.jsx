@@ -5,6 +5,7 @@ import s1_right_2 from "@/assets/allphoto/5V1A9837_resized.jpg"
 import s1_right_3 from "@/assets/allphoto/5V1A0337_resized_v1.jpg"
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import {CONTACT} from "@/utils/consts.jsx";
 
 const HomeS1 = () => {
     const {t} = useTranslation();
@@ -21,9 +22,8 @@ const HomeS1 = () => {
                                 <div data-aos="fade-up" className="col-lg-12 mb-1 home_s1_item">
                                     <img src={s1_right_1} alt=""/>
                                     <div className="home_s1_item_text">
-
-                                        <h2>Комфорт и качество</h2>
-                                        <Link to={"#"}>Сделать заказ</Link>
+                                        <h2>{t("home.home_s1.i1")}</h2>
+                                        <Link to={CONTACT}>{t("home.home_s1.btn")}</Link>
                                     </div>
                                 </div>
 
@@ -41,8 +41,8 @@ const HomeS1 = () => {
 
                                     }}>
 
-                                        <h2 style={{color: "black"}}>Создай свой стиль</h2>
-                                        <Link to={"#"}>Сделать заказ</Link>
+                                        <h2 style={{color: "black"}}>{t("home.home_s1.i2")}</h2>
+                                        <Link to={CONTACT}>{t("home.home_s1.btn")}</Link>
                                     </div>
                                 </div>
                                 <div data-aos="fade-up"
@@ -54,8 +54,8 @@ const HomeS1 = () => {
                                         top: "10%",
                                     }}>
 
-                                        <h2 style={{color: "black"}}>Идеальная посадка</h2>
-                                        <Link to={"#"}>Сделать заказ</Link>
+                                        <h2 style={{color: "black"}}>{t("home.home_s1.i3")}</h2>
+                                        <Link to={CONTACT}>{t("home.home_s1.btn")}</Link>
                                     </div>
                                 </div>
                             </div>
@@ -65,8 +65,8 @@ const HomeS1 = () => {
                         <img src={s1_left} alt=""/>
                         <div className="home_s1_item_text" style={{left: "30px"}}>
 
-                            <h2>Свобода в движение</h2>
-                            <Link to={"#"}>Сделать заказ</Link>
+                            <h2>{t("home.home_s1.i4")}</h2>
+                            <Link to={CONTACT}>{t("home.home_s1.btn")}</Link>
                         </div>
                     </div>
                 </div>

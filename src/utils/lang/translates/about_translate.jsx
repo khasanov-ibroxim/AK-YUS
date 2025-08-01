@@ -37,9 +37,17 @@ export const about_translate ={
     },
     en:{
         index:{
-            about:"About us",
-            header:"Погрузитесь в мир трикотажа, где каждая нить сплетена с уютом, а каждая модель создана с душой"
-
+            about:"About Us",
+            story:"Our Story",
+            misson:"Our Mission",
+            contact:"Contact Us",
+            header:"Step into the world of knitwear, where every thread is woven with comfort and every piece is crafted with heart."
+        },
+        about_component:{
+            title:"Clothing That Inspires",
+            description:`We create stylish, high-quality, and comfortable knitwear that allows everyone to express their individuality and feel confident.
+Our goal is to bring comfort and inspiration every day, helping people stay true to themselves in any situation.`,
+            s2_title:"Wear Comfort, Radiate Style"
         },
     }
 }

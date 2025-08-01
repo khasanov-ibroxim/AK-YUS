@@ -7,16 +7,15 @@ import { Link } from "react-router-dom";
 
 import { BestSell, Category } from "@/utils/db_products.jsx";
 import ProductCard from "@/component/product_card/product_card.jsx";
+import {useTranslation} from "react-i18next";
 
 const HomeS2 = () => {
     const swiperRef = useRef(null); // Swiper uchun ref
+    const {t} = useTranslation();
 
     return (
         <div className={"home_s2 pt-5"}>
-            <div className="home_title_content pb-5" data-aos="fade-up">
-                {/*<span>Лучшее из лучшего</span>*/}
-                {/*<h2> Наши бестселлеры</h2>*/}
-            </div>
+
             {BestSell.length > 4 && <div className="custom-nav" data-aos="fade-up">
                 <button
                     className="swiper-button-prev"

@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EastIcon from '@mui/icons-material/East';
 import {Link} from "react-router-dom";
-import {CONTACT} from "@/utils/consts.jsx";
+import {ABOUT, CONTACT} from "@/utils/consts.jsx";
 import {useTranslation} from "react-i18next";
 
 const Footer = () => {
@@ -39,27 +39,27 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-6">
                     <div className="footer_item_def">
-                            <h4>О нас</h4>
+                            <h4>{t("footer.item_2.title")}</h4>
                             <ul>
-                                <li><Link to={"#"}>Наша история</Link></li>
-                                <li><Link to={"#"}>Наша миссия</Link></li>
-                                <li><Link to={"#"}>Свяжитесь с нами</Link></li>
+                                <li><Link to={ABOUT}>{t("footer.item_2.os")}</Link></li>
+                                <li><Link to={ABOUT}>{t("footer.item_2.om")}</Link></li>
+                                <li><Link to={ABOUT}>{t("footer.item_2.contact")}</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-6">
                         <div className="footer_item_def">
-                            <h4>Покупателям</h4>
+                            <h4>{t("footer.item_3.title")}</h4>
                             <ul>
-                                <li><Link to={"#"}>Доставка и оплата</Link></li>
-                                <li><Link to={"#"}>Вопросы</Link></li>
+                                <li><Link to={"#"}>{t("footer.item_3.i1")}</Link></li>
+                                <li><Link to={"#"}>{t("footer.item_3.i2")}</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-6">
                         <div className="footer_item_def">
-                            <h4>Следите за нами</h4>
-                            <p>Будьте в курсе новинок и акций</p>
+                            <h4>{t("footer.item_4.title")}</h4>
+                            <p>{t("footer.item_4.text")}</p>
                             <ul className={"d-flex flex-row"}>
                                <li><Link to={"#"}><InstagramIcon/></Link></li>
                                <li><Link to={"#"}><TelegramIcon/></Link></li>
@@ -68,9 +68,9 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-2 col-md-3 col-sm-6">
                         <div className="footer_last_item">
-                            <h3>Связаться с нами</h3>
-                            <p>Задайте вопрос или оформите заказ — мы всегда на связи</p>
-                            <Link to={CONTACT} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Контакты <EastIcon/></Link>
+                            <h3>{t("footer.item_5.title")}</h3>
+                            <p>{t("footer.item_5.text")}</p>
+                            <Link to={CONTACT} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t("footer.item_5.btn")} <EastIcon/></Link>
                         </div>
                     </div>
                 </div>
