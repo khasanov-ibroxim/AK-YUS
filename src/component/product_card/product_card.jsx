@@ -16,24 +16,24 @@ const ProductCard = ({product, key , array}) => {
     }
 
     return (
-        <Link
+        <div
             key={key}
             className="home_s2_item"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
          //    onClick={()=>window.scrollTo(0, 0)}
          // to={PRODUCT_SOLO.replace(":product_id" , product.id).replace(":array" , array)}
-             to={"#"}>
-            <Link onClick={()=>window.scrollTo(0, 0)} className="home_s2_item_top" to={"#"}>
+            >
+            <div className="home_s2_item_top">
                 <img
                     src={imgChecker()}
                     alt={product.name}
                 />
-            </Link>
+            </div>
             <div className="home_s2_item_bottom">
                 {/*<h5><Link onClick={()=>window.scrollTo(0, 0)} to={PRODUCT_SOLO.replace(":product_id" , product.id).replace(":array" , array)}>{product.name}</Link></h5>*/}
             </div>
-        </Link>
+        </div>
     );
 };
 
