@@ -6,8 +6,8 @@ import s2_item_5 from "@/assets/allphoto/5V1A0053_resized.jpg"
 
 import s2_item_1_detail from "@/assets/allphoto/5V1A0003_resized_deteil.jpg"
 import s2_item_2_detail from "@/assets/allphoto/5V1A0276_resized.jpg"
-import s2_item_3_detail from "@/assets/allphoto/5V1A0194_resized_deteil.png"
-import s2_item_4_detail from "@/assets/allphoto/5V1A0392_resized_deteil.png"
+import s2_item_3_detail from "@/assets/allphoto/5V1A0194_resized_deteil.jpg"
+import s2_item_4_detail from "@/assets/allphoto/5V1A0392_resized_deteil.jpg"
 import s2_item_5_detail from "@/assets/allphoto/5V1A0053_resized_deteil.jpg"
 
 
