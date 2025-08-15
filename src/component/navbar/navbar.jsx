@@ -39,12 +39,28 @@ const Navbar = () => {
                 </div>
                 <div className={`nav_menu ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
-                        <li><Link to={HOME} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t("navbar.home")}</Link></li>
-                        <li><Link to={ABOUT} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t("navbar.about")}</Link></li>
-                        <li><Link to={PRODUCT} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t("navbar.products")}</Link></li>
-                        <li><Link to={FAQS} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t("navbar.faqs")}</Link></li>
+                        <li><Link to={HOME} onClick={() => {
+                            window.scrollTo({top: 0, behavior: "smooth"})
+                            setIsMenuOpen(false)
+                        }}
+                        >{t("navbar.home")}</Link></li>
+                        <li><Link to={ABOUT} onClick={() => {
+                            window.scrollTo({top: 0, behavior: "smooth"})
+                            setIsMenuOpen(false)
+                        }}>{t("navbar.about")}</Link></li>
+                        <li><Link to={PRODUCT} onClick={() => {
+                            window.scrollTo({top: 0, behavior: "smooth"})
+                            setIsMenuOpen(false)
+                        }}>{t("navbar.products")}</Link></li>
+                        <li><Link to={FAQS} onClick={() => {
+                            window.scrollTo({top: 0, behavior: "smooth"})
+                            setIsMenuOpen(false)
+                        }}>{t("navbar.faqs")}</Link></li>
 
-                        <li><Link to={CONTACT} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{t("navbar.contact")}</Link></li>
+                        <li><Link to={CONTACT} onClick={() => {
+                            window.scrollTo({top: 0, behavior: "smooth"})
+                            setIsMenuOpen(false)
+                        }}>{t("navbar.contact")}</Link></li>
                         <li className="lang_nav" style={isMobile ? {display: "flex"} : {display: "none"}}>
                             <Dropdown
                                 menu={{
