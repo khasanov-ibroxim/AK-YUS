@@ -1,7 +1,7 @@
 
 export const languages = [
     {
-        label: "Russian",
+        label: "Русский",
         key: "0",
         code: "ru",
         // icon: <img src={RU} alt={"russ"}/>,
